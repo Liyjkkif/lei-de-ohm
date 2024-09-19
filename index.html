@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohm's Law Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="https://realizeeducacao.com.br/wp-content/uploads/2021/10/leis-de-ohm.png" alt="Lei de ohm">
+    </header>
+
+    <form>
+        <div>
+            <label for="tensao">Tensão</label>
+            <br>
+            <input type="number" id="tensao">
+        </div>
+
+        <div>
+            <label for="corrente">Corrente</label>
+            <br>
+            <input type="number" id="corrente">
+        </div>
+
+        <div>
+            <label for="resistencia">Resistencia</label>
+            <br>
+            <input type="number" id="resistencia">
+        </div>
+
+        <button onclick="calcularValores(event)">Calcular</button>
+    </form>
+
+    <div>
+        <h3>Resposta: <span class="resposta"></span></h3>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
