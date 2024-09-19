@@ -22,7 +22,7 @@ function calcularValores(evento){
     });
 
     if (valorTensao && valorCorrente && valorResistencia){
-        valorResposta.textContent = 'Seu porra'
+        valorResposta.textContent = 'Não há valores para encontrar!'
 
     } else if (valorTensao && valorCorrente){
         valorResposta.textContent = `${valorTensao / valorCorrente} Ohms`
